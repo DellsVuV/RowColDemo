@@ -39,7 +39,12 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun MainScreen(modifier: Modifier = Modifier) {
-    // Пока пусто - будем добавлять Row и Column в следующих заданиях
+    // ▼▼▼ ДОБАВЛЯЕМ ROW ▼▼▼
+    Row(modifier) {
+        TextCell("1")
+        TextCell("2")
+        TextCell("3")
+    }
 }
 
 @Composable
@@ -66,10 +71,3 @@ fun GreetingPreview() {
     }
 }
 
-@Preview
-@Composable
-fun TextCellPreview() {
-    RowColDemoTheme {
-        TextCell(text = "A")
-    }
-}
